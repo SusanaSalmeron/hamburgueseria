@@ -305,14 +305,33 @@ main #ourservices article>div .fas{
 .fa-truck {
     transform: rotateY(180deg);
 }
-
-
-
-
-
-
-
 /* final our services */
+
+/* inicio aboutus */
+
+main section:last-child {
+    padding-bottom: 90px;
+}
+
+main section h4 {
+    margin: var(--margingrid) 0;
+    color: var(--color-principal)
+} 
+
+main section .flex {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+/* final aboutus */
 
 
 
@@ -347,6 +366,14 @@ main #ourservices article>div .fas{
         border-bottom: 0;
         border-left: 1px solid #aaa;
         padding: 1.5em;  
+    }
+
+    main section .flex {
+       flex-direction: row;
+    }
+
+    main section .flex .columna {
+        margin: 0 var(--margingrid);
     }
 
 
