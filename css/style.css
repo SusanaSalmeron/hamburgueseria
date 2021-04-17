@@ -359,12 +359,13 @@ main #ourblogs .grid .hidden {
 main #ourblogs .grid article div img {
     position: relative;
     margin: calc(var(--margingrid) * 2) 0;
+    
 }
 
-main #ourblogs .grid article div span {
-    display: inline-block;
-    position:fixed;
-    bottom: 30em;
+main #ourblogs .grid article span {
+    display: block;
+    position: absolute;
+    bottom: 16em;
     width: 4em;
     height: 4em;
     padding: var(--padding);
@@ -608,8 +609,8 @@ article .boton:hover {
     grid-gap: calc(var(--margingrid) * 1.5);
     } 
  
-    main #ourblogs .grid article div span {
-       bottom: 44.4em;
+    main #ourblogs .grid article span {
+       bottom: 30.5em;
     }
 
     main {
@@ -690,6 +691,9 @@ article .boton:hover {
     #todaysmenu .grid .offers .title hr  {
         width: 26%;
        
+    }
+    #todaysmenu .grid .burger h3 span {
+        display: fixed;
     }
 
 
