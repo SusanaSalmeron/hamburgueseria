@@ -363,8 +363,9 @@ main #ourblogs .grid article div img {
 
 main #ourblogs .grid article div span {
     display: inline-block;
-    position: absolute;
-    bottom: 18em;
+    position:fixed;
+    
+    bottom: 30em;
     width: 4em;
     height: 4em;
     padding: var(--padding);
@@ -457,11 +458,8 @@ main{
  #todaysmenu div hr {
     color: var(--color-principal);
     width: 13%;
-    margin: 0;
-    
-    
-    
-    
+    margin: 0; 
+  
 }
 
 #todaysmenu p {
@@ -515,18 +513,6 @@ article .boton:hover {
 
     border: none;
 }
-
-
- 
-
-
-
-
-
-
-
-
-
 
 
 /* final todays menu */
@@ -619,7 +605,18 @@ article .boton:hover {
     } 
  
     main #ourblogs .grid article div span {
-       bottom: 32.45em;
+       bottom: 44.4em;
+    }
+
+    
+    .meals {
+        width:30%;
+        margin: calc(var(--margingrid) * 2) 0;
+    
+    }
+    
+    .meals li {
+        padding: var(--padding);
     }
 
  
