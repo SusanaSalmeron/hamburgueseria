@@ -364,7 +364,6 @@ main #ourblogs .grid article div img {
 main #ourblogs .grid article div span {
     display: inline-block;
     position:fixed;
-    
     bottom: 30em;
     width: 4em;
     height: 4em;
@@ -375,6 +374,7 @@ main #ourblogs .grid article div span {
     color: white;
     font-weight: 700;;
 }
+
 
 /* final ourblogs */
 
@@ -514,6 +514,10 @@ article .boton:hover {
     border: none;
 }
 
+#todaysmenu .grid .pizza{
+    display:none;
+}
+
 
 /* final todays menu */
 
@@ -608,16 +612,140 @@ article .boton:hover {
        bottom: 44.4em;
     }
 
-    
-    .meals {
-        width:30%;
-        margin: calc(var(--margingrid) * 2) 0;
-    
+    main {
+        width: 90%;
     }
-    
-    .meals li {
-        padding: var(--padding);
+    .meals{
+       
+        width: 70%;
+    } 
+
+   #todaysmenu div h2 {
+
+        margin-top: calc(var(--margingrid)*4);
+
     }
 
+    #todaysmenu div p {
+        width: 30%;
+        line-height: 1.75em;
+
+    }
+
+    #todaysmenu div hr {
+        width: 5%;
+    }
+
+    #todaysmenu div p {
+        width: 30%;
+    }
+
+    #todaysmenu .grid {
+        margin-top: calc((--margingrid)*2);display: grid;
+        grid-template-columns: 3fr 2fr 4fr;
+        grid-template-rows : 2fr 2fr 2fr;
+        
+    }
+
+    #todaysmenu .grid .meals {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #todaysmenu .grid .offers  {
+        grid-column: 1/2;
+        grid-row: 2/4;
+    }
+
+    
+    #todaysmenu .grid img {
+        margin-top: calc(var(--margingrid)*2.5);
+        width:100%;
+    }
+
+    #todaysmenu .grid .pizza {
+        display: block;
+        margin-top: var(--margingrid);
+
+    }  
+    #todaysmenu .grid .burger, .coffee{
+        margin-top: var(--margingrid);
+
+    }  
+
+    #todaysmenu .grid .offers  {
+        width: 100%;
+    }
+
+    #todaysmenu .grid .offers .title {
+        margin-top: 7em;
+        width: 100%;
+    }
+
+    #todaysmenu .grid .offers p  {
+        width: 80%;
+        margin-top: 8em;
+    }
+
+    #todaysmenu .grid .offers .title hr  {
+        width: 26%;
+       
+    }
+
+
+       
+
+    }  
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+   
+
+    
+    
+    
+    
+    
+
  
-}
+
