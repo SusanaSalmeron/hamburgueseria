@@ -364,7 +364,7 @@ main #ourblogs .grid article div img {
 main #ourblogs .grid article div span {
     display: inline-block;
     position: absolute;
-    bottom: 15.3em;
+    bottom: 18em;
     width: 4em;
     height: 4em;
     padding: var(--padding);
@@ -375,12 +375,161 @@ main #ourblogs .grid article div span {
     font-weight: 700;;
 }
 
-
-
-
-
-
 /* final ourblogs */
+
+/* inicio todays menu */
+
+#color  {
+    background-color: var(--color-secundario) ;
+}
+main section {
+    padding: 2.125em 1.5em;
+
+}
+
+main section h1 {
+    color: white;
+    font-family: var(--fuente-secundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h1 span {
+    color: var(--color-principal)
+}
+
+main section .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: 700;
+    text-align:  center;
+}
+
+#todaysmenu section .underline hr {
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    border-color: var(--color-principal);
+}
+
+main section .underline {
+    text-align: center;
+}
+.meals a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fuente-principal);
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+} 
+
+.meals {
+    margin: calc(var(--margingrid) * 2) 0;
+
+}
+
+.meals li {
+    padding: var(--padding);
+}
+
+.meals li:hover {
+    background-color: var(--color-principal);
+    border-radius: 5px;
+}
+
+
+
+ #todaysmenu div h2 {
+    color: white;
+    font-family: var(--fuente-principal);
+    font-size: calc(var(--fontsize)*1.25);
+    text-align: left;
+    padding-bottom: var(--padding);
+    text-align: left;
+     
+}
+
+ #todaysmenu div hr {
+    color: var(--color-principal);
+    width: 13%;
+    margin: 0;
+    
+    
+    
+    
+}
+
+#todaysmenu p {
+    margin-top: var(--margingrid);
+    margin-bottom: calc(var(--margingrid)*2);
+    font-size: 0.75em;
+    color: #aaa;
+}
+
+
+#todaysmenu article img {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#todaysmenu h3 {
+    color: white;
+    font-size: var(--fontsize);
+    font-weight: 400;
+    margin-left: calc(var(--margingrid) *1.50);
+    margin-top: calc(var(--margingrid) * 1.5);
+
+}
+
+#todaysmenu h3 span {
+    color: var(--color-principal);
+    padding-left: var(--padding);
+}
+
+#todaysmenu article h4 {
+    color: #aaa;
+    font-size: 0.75em;
+    margin-left: calc(var(--margingrid) * 2);
+}
+
+#todaysmenu article a {
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 0.75em;
+    font-weight: 700;
+    margin-left: var(--margingrid);
+
+}
+
+article .boton {
+    background-color: transparent;
+    border: none;
+}
+
+article .boton:hover {
+
+    border: none;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* final todays menu */
 
 
 
@@ -470,7 +619,7 @@ main #ourblogs .grid article div span {
     } 
  
     main #ourblogs .grid article div span {
-       bottom: 29.77em;
+       bottom: 32.45em;
     }
 
  
