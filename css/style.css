@@ -381,7 +381,7 @@ main #ourblogs .grid article span {
 
 /* inicio todays menu */
 
-#color  {
+main #todaysmenu  {
     background-color: var(--color-secundario) ;
 }
 main section {
@@ -419,7 +419,7 @@ main section .underline {
 main section .underline {
     text-align: center;
 }
-.meals a{
+.grid nav ul li a{
     text-decoration: none;
     color: white;
     font-family: var(--fuente-principal);
@@ -430,16 +430,16 @@ main{
     margin: 0 auto;
 } 
 
-.meals {
+.grid nav {
     margin: calc(var(--margingrid) * 2) 0;
 
 }
 
-.meals li {
+.grid nav ul li {
     padding: var(--padding);
 }
 
-.meals li:hover {
+.grid nav ul li:hover {
     background-color: var(--color-principal);
     border-radius: 5px;
 }
@@ -456,9 +456,9 @@ main{
      
 }
 
- #todaysmenu div hr {
+ #todaysmenu .offers hr {
     color: var(--color-principal);
-    width: 13%;
+    width: 5%;
     margin: 0; 
   
 }
@@ -502,7 +502,6 @@ main{
     font-size: 0.75em;
     font-weight: 700;
     margin-left: var(--margingrid);
-
 }
 
 article .boton {
@@ -511,12 +510,11 @@ article .boton {
 }
 
 article .boton:hover {
-
     border: none;
 }
 
-#todaysmenu .grid .pizza{
-    display:none;
+#todaysmenu .grid .image3, .pizza {
+    display: none;
 }
 
 
@@ -601,7 +599,7 @@ article .boton:hover {
     }
 
     main #ourblogs .grid .hidden {
-        display: grid;
+        display: block;
     }
 
     main #ourblogs .grid{
@@ -622,30 +620,19 @@ article .boton:hover {
     } 
 
    #todaysmenu div h2 {
-
-        margin-top: calc(var(--margingrid)*4);
+    margin-top: calc(var(--margingrid)*4);
 
     }
 
     #todaysmenu div p {
         width: 30%;
         line-height: 1.75em;
-
     }
-
-    #todaysmenu div hr {
-        width: 5%;
-    }
-
-    #todaysmenu div p {
-        width: 30%;
-    }
-
+    
     #todaysmenu .grid {
         margin-top: calc((--margingrid)*2);display: grid;
         grid-template-columns: 3fr 2fr 4fr;
         grid-template-rows : 2fr 2fr 2fr;
-        
     }
 
     #todaysmenu .grid .meals {
@@ -657,6 +644,8 @@ article .boton:hover {
         grid-column: 1/2;
         grid-row: 2/4;
     }
+    
+
 
     
     #todaysmenu .grid img {
@@ -664,11 +653,11 @@ article .boton:hover {
         width:100%;
     }
 
-    #todaysmenu .grid .pizza {
+    #todaysmenu .grid .image3, .pizza {
         display: block;
         margin-top: var(--margingrid);
+    }
 
-    }  
     #todaysmenu .grid .burger, .coffee{
         margin-top: var(--margingrid);
 
@@ -678,7 +667,7 @@ article .boton:hover {
         width: 100%;
     }
 
-    #todaysmenu .grid .offers .title {
+    #todaysmenu .grid .offers div {
         margin-top: 7em;
         width: 100%;
     }
@@ -688,7 +677,7 @@ article .boton:hover {
         margin-top: 8em;
     }
 
-    #todaysmenu .grid .offers .title hr  {
+    #todaysmenu .grid .offers hr  {
         width: 26%;
        
     }
@@ -699,7 +688,7 @@ article .boton:hover {
 
        
 
-    }  
+ }  
     
     
 
