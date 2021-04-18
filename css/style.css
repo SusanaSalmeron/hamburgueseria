@@ -356,24 +356,30 @@ main #ourblogs .grid .hidden {
     display: none
 }
 
-main #ourblogs .grid article div img {
+.grid article {
+    max-width: auto; 
     position: relative;
     margin: calc(var(--margingrid) * 2) 0;
+}
+
+.grid article figure {
+    max-width: 34vh;
+    height: auto;
     
 }
 
-main #ourblogs .grid article span {
-    display: block;
+.grid article .fecha {
     position: absolute;
-    bottom: 16em;
-    width: 4em;
-    height: 4em;
-    padding: var(--padding);
-    line-height: 1.50;
-    text-align: center;
     background-color: rgba(250, 87, 58, 0.8);
     color: white;
-    font-weight: 700;;
+    padding: var(--padding);
+    width: 4em;
+    height: 4em;
+    top: 0;
+    line-height: 1.50;
+    text-align: center;
+    font-weight: 700;
+  
 }
 
 
@@ -381,11 +387,14 @@ main #ourblogs .grid article span {
 
 /* inicio todays menu */
 
-main #todaysmenu  {
+main #todaysmenu, #todaysmenu section  {
     background-color: var(--color-secundario) ;
 }
 main section {
     padding: 2.125em 1.5em;
+    width: 80%;
+    margin: 0 auto;
+    
 
 }
 
@@ -426,12 +435,15 @@ main section .underline {
 }
 
 main{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 } 
 
 .grid nav {
     margin: calc(var(--margingrid) * 2) 0;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: calc(var(--margingrid)*2);
 
 }
 
@@ -451,15 +463,16 @@ main{
     font-family: var(--fuente-principal);
     font-size: calc(var(--fontsize)*1.25);
     text-align: left;
-    padding-bottom: var(--padding);
     text-align: left;
+    width: 80%;
+    margin: 0 auto;
      
 }
 
  #todaysmenu .offers hr {
     color: var(--color-principal);
-    width: 5%;
-    margin: 0; 
+    width: 9%;
+    margin-left: 3.9em; 
   
 }
 
@@ -468,32 +481,35 @@ main{
     margin-bottom: calc(var(--margingrid)*2);
     font-size: 0.75em;
     color: #aaa;
-}
-
-
-#todaysmenu article img {
+    width: 80%;
     margin: 0 auto;
-    width: 90%;
 }
 
-#todaysmenu h3 {
+
+#todaysmenu figure {
+    margin: 0 auto;
+    width: 85%;
+    padding-top: calc(var(--padding) *2);
+}
+
+#todaysmenu article h3 {
     color: white;
     font-size: var(--fontsize);
     font-weight: 400;
-    margin-left: calc(var(--margingrid) *1.50);
-    margin-top: calc(var(--margingrid) * 1.5);
-
+    margin-left: calc(var(--margingrid)*2.6);
+    width: 80%;
 }
 
 #todaysmenu h3 span {
     color: var(--color-principal);
-    padding-left: var(--padding);
+    padding-left: calc(var(--padding)*2);
 }
 
 #todaysmenu article h4 {
     color: #aaa;
     font-size: 0.75em;
-    margin-left: calc(var(--margingrid) * 2);
+    width: 80%;
+    margin-left: calc(var(--margingrid) * 3.5);
 }
 
 #todaysmenu article a {
@@ -501,7 +517,7 @@ main{
     color: var(--color-principal);
     font-size: 0.75em;
     font-weight: 700;
-    margin-left: var(--margingrid);
+    margin-left: calc(var(--margingrid)* 2.5);
 }
 
 article .boton {
@@ -549,6 +565,7 @@ article .boton:hover {
 
 
 }
+
 @media(min-width:768px) {
     header .nav-top a span {
         display: inline;
@@ -603,36 +620,32 @@ article .boton:hover {
     }
 
     main #ourblogs .grid{
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: calc(var(--margingrid) * 1.5);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: calc(var(--margingrid) * 1.5);
+        margin-top: 5em;
     } 
  
-    main #ourblogs .grid article span {
-       bottom: 30.5em;
+     main #todaysmenu {
+        width: 100%;
+        background-color: var(--color-secundario);
     }
-
-    main {
-        width: 90%;
-    }
+    
     .meals{
        
-        width: 70%;
+        width: 100%;
     } 
 
-   #todaysmenu div h2 {
-    margin-top: calc(var(--margingrid)*4);
-
-    }
-
-    #todaysmenu div p {
-        width: 30%;
-        line-height: 1.75em;
+    #todaysmenu div h2 {
+        padding: 0.5em;
+        text-align: left;
+        font-size: var(--fuente-secundaria);
     }
     
     #todaysmenu .grid {
         margin-top: calc((--margingrid)*2);display: grid;
         grid-template-columns: 3fr 2fr 4fr;
         grid-template-rows : 2fr 2fr 2fr;
+        margin-top: 2em;
     }
 
     #todaysmenu .grid .meals {
@@ -645,23 +658,21 @@ article .boton:hover {
         grid-row: 2/4;
     }
     
-
-
-    
     #todaysmenu .grid img {
-        margin-top: calc(var(--margingrid)*2.5);
         width:100%;
     }
 
     #todaysmenu .grid .image3, .pizza {
         display: block;
-        margin-top: var(--margingrid);
+    } 
+
+    #todaysmenu .grid .burger, .grid .coffee, .grid .pizza {
+        margin-top: 0;
+    } 
+
+    #todaysmenu .grid .image2, .grid image1 {
+        margin-top:0;
     }
-
-    #todaysmenu .grid .burger, .coffee{
-        margin-top: var(--margingrid);
-
-    }  
 
     #todaysmenu .grid .offers  {
         width: 100%;
@@ -674,13 +685,14 @@ article .boton:hover {
 
     #todaysmenu .grid .offers p  {
         width: 80%;
-        margin-top: 8em;
+        margin-top: 6em;
     }
 
     #todaysmenu .grid .offers hr  {
-        width: 26%;
-       
+        width: 20%;
+        margin-left: 1.9em;
     }
+
     #todaysmenu .grid .burger h3 span {
         display: fixed;
     }
